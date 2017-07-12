@@ -19,9 +19,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         ButterKnife.bind(this);
-        result = numero + numero2;
+        result = numero + numero2;//teste de commit
     }
 
     @OnClick(R.id.btcategorias) void abreCategoria(){
