@@ -11,6 +11,8 @@ import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
     @BindView(R.id.btcategorias) Button btcategoria;
+    int numero=1,numero2=2,result;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +21,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         ButterKnife.bind(this);
+        result = numero + numero2;
     }
 
     @OnClick(R.id.btcategorias) void abreCategoria(){
         startActivity(new Intent(MainActivity.this, CategoryActivity.class));
     }
+
+
+
+
 }
